@@ -80,7 +80,7 @@ public class MenuSystem {
     }
 
     private static boolean menuAfterAuthorization(String role, String login, String password, double money) {
-        String temp = role.equals("admin") ? "\n\t\t3.Create purchase.\n\t\t4.Exit" : "\n\t\t3.Exit";
+        String temp = role.equals("admin") ? "\n\t\t3.Create purchase.\n\t\t4.Clear list purchase.\n\t\t5.Exit" : "\n\t\t3.Exit";
         System.out.println("\tMenu:\n\t\t1.Show list purchase and bill.\n\t\t2.Top up the account." + temp);
         System.out.print("Your choice is - ");
         Scanner scanChoice = new Scanner(System.in);
@@ -120,7 +120,7 @@ public class MenuSystem {
                     case 3: {
                         System.out.println("Create purchase");
                         try {
-                            System.out.println("\t\tMenu:\n\t\t\t1.Create Pizza.\n\t\t\t2.Create Sushi.\n\t\t\t3.Create Shawerma.\n\t\t\t4.Clear list purchase.");
+                            System.out.println("\t\tMenu:\n\t\t\t1.Create Pizza.\n\t\t\t2.Create Sushi.\n\t\t\t3.Create Shawerma.");
                             System.out.print("Your choice is - ");
                             try {
                                 int yourChoice = scanChoice.nextInt();
@@ -152,10 +152,6 @@ public class MenuSystem {
                                         writePurchaseInFileLog(purchaseArrayList);
                                         break;
                                     }
-                                    case 4: {
-                                        FileWorker.clearFile(new File("./src/guru/work/prog/files/purchase.txt"));
-                                        break;
-                                    }
                                     default: {
 
                                     }
@@ -169,6 +165,10 @@ public class MenuSystem {
                         return true;
                     }
                     case 4: {
+                        FileWorker.clearFile(new File("./src/guru/work/prog/files/purchase.txt"));
+                        return true;
+                    }
+                    case 5: {
                         return false;
                     }
                     default: {
@@ -196,9 +196,11 @@ public class MenuSystem {
                         System.out.println("Top up the account");
                         try {
                             System.out.print("Your summa is wanna to top up - ");
-                            int yourChoice = scanChoice.nextInt();
+                            Scanner scanner = new Scanner(System.in);
+                            scanner.useLocale(Locale.US);
+                            double yourChoice = scanner.nextDouble();
                             Cash cash = new Cash(login, password);
-                            cash.setResultCalculate(money + FileWorker.readerPurchase().get(yourChoice - 1).getPrice());
+                            cash.setResultCalculate(money + yourChoice);
                             FileWorker.editorUserInFile(login, password, cash.getResultCalculate());
                         } catch (Exception e) {
                             System.out.println("Exception top up money account user: " + login);
