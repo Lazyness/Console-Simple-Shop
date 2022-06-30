@@ -9,14 +9,14 @@
 
 ## Features
 ### Features for all (users and admin)
-- Sing in/Log out
-- Registration
-- Show list purchase and bill
-- Top up the account
+:white_check_mark: Sing in/Log out
+<br>:white_check_mark: Registration
+<br>:white_check_mark: Show list purchase and bill
+<br>:white_check_mark: Top up the account
 
 ### Additional features for admin
-- Create purchase
-- Clear list purchase
+:white_check_mark: Create purchase
+<br>:white_check_mark: Clear list purchase
 
 ## Usage
 You can generate user
