@@ -54,15 +54,15 @@ and purchase.txt.
 
 ## Photo
 ### Registration
-![img_1.png](img_1.png)
+![img_1.png](photos/img_1.png)
 ### Authorization
-![img_2.png](img_2.png)
+![img_2.png](photos/img_2.png)
 ### Features
 #### Features user
-![img_3.png](img_3.png)
+![img_3.png](photos/img_3.png)
 #### Features admin (addition)
-![img_4.png](img_4.png)
+![img_4.png](photos/img_4.png)
 Also I ***add*** some ***purchase*** because I wanna to buy many things =)
 <br>You can see in the next photo all ***list purchase***. 
 <br>***Clear list*** - I think it's clear how it works.
-![img_5.png](img_5.png)
+![img_5.png](photos/img_5.png)
