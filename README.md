@@ -1,6 +1,6 @@
 # Console-Simple-Shop
 ___
-
+https://img.shields.io/github/forks/Lazyness/Console-Simple-Shop?style=social
 ## Preview from dima-coder =)!
 1. This project uses jdk 11.
 2. My project implements a simple customer-cash system that is, a store.
