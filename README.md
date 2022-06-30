@@ -1,5 +1,4 @@
 # Console-Simple-Shop
-___
 ![GitHub forks](https://img.shields.io/github/forks/Lazyness/Console-Simple-Shop?logo=GitHub&style=flat-square)
 ![GitHub watchers](https://img.shields.io/github/watchers/Lazyness/Console-Simple-Shop?style=social)
 ## Preview from dima-coder =)!
